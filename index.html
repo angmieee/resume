@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_908787_kekc8lrkg7e.css">
     <style>
@@ -20,9 +20,11 @@
         }
 
         .layout {
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+            max-width: 960px;
+            margin: 0 auto;
         }
 
         #page {
@@ -148,7 +150,7 @@
             min-height: calc(100vh - 162px);
         }
 
-        @media (max-width: 768px) {
+        /* @media (max-width: 768px) {
             header {
                 padding-top: 20px;
                 padding-bottom: 90px;
@@ -163,6 +165,15 @@
                 width: 100px;
                 height: 100px;
             }
+        } */
+
+        @media print {
+            h3.break {
+                page-break-before: always;
+                margin-top: -100px;
+            }
+
+
         }
 
         .fix {
@@ -209,8 +220,8 @@
                         <span>23</span>
                     </div>
                     <div class="item">
-                        <span>意向薪资</span>
-                        <span>6~8k</span>
+                        <span>毕业时间</span>
+                        <span>2020年</span>
                     </div>
                 </div>
             </section>
@@ -342,8 +353,8 @@
                                 target="_blank">https://angmieee.github.io/draw-a-pikachu/index.html</a></li>
                     </ul>
                 </div>
-                <div class="item">
-                    <h3>创意画板</h3>
+                <div class="item" class="page-break">
+                    <h3 class="break">创意画板</h3>
                     <ul>
                         <li>项目介绍：
                             是一个使用<span class="red">原生JS</span>开发的，主要利用<span class="red">HTML5的Canvas
