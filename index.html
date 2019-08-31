@@ -168,9 +168,9 @@
         } */
 
         @media print {
-            h3.break {
+            div.break {
                 page-break-before: always;
-                margin-top: -100px;
+                margin-top: -120px;
             }
 
 
@@ -309,7 +309,29 @@
             <section>
                 <h2>项目经历</h2>
                 <div class="item">
-                    <h3>vue技术栈实现cnode社区</h3>
+                    <h3>Augmi UI 框架</h3>
+                    <ul>
+                        <li>项目介绍：
+                            该项目是一个基于<span class="red">Vue</span>实现的简单<span class="red">UI组件库</span>，设计思路主要来自
+                            Framework7、Ant Design、Element UI、iView 等UI库，该框架目前已支持<span
+                                class="red">按钮、输入框、网格、布局、Toast</span>等组件（更新中）。每个组件的开发都是从<span
+                                class="red">需求分析</span>到<span class="red">单元测试</span>，再到<span
+                                class="red">TravisCI实现持续集成</span>，
+                            最终以<span class="red">VuePress</span>为基础制作了官方文档，并将包发布于<span
+                                class="red">npmjs.org</span>。该项目使我更加了解了Vue的常用特征，同时也使自己对<span
+                                class="red">前端工程化流程</span>以及单元测试的重要性有了深刻理解。
+                        </li>
+                        <li>技术栈：<strong>vue、vuepress、parcel、karma、mocha、scss、travisCI、es6</strong></li>
+                        <li>项目源码:<a href="https://github.com/angmieee/augmi-ui"
+                                target="_blank">https://github.com/angmieee/augmi-ui</a>
+                        </li>
+                        <li>项目预览: <a href="https://angmieee.github.io/augmi-ui/"
+                                target="_blank">https://angmieee.github.io/augmi-ui/</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Vue技术栈实现Cnode社区</h3>
                     <ul>
                         <li>项目介绍：
                             该项目使用Vue还原CNode官方社区，项目调用CNode官方社区提供的API，以<span class="red">vue-cli</span>创建项目模版，使用<span
@@ -325,11 +347,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="item">
-                    <h3>vue实现todolist</h3>
+                <div class="item break">
+                    <h3>Vue实现TodoList</h3>
                     <ul>
                         <li>项目介绍：
-                            该项目使用vue实现todolist应用，以<span class="red">vue-cli</span>创建项目模板，使用vue组件完成项目的模块化开发，利用<span
+                            该项目使用vue实现TodoList应用，以<span class="red">vue-cli</span>创建项目模板，使用Vue组件完成项目的模块化开发，利用<span
                                 class="red">组件通信</span>实现todo的增加和删除功能，Webpack打包完成<span class="red">工程化</span>开发。
                         </li>
                         <li><strong>技术栈：vue、vue-cli、webpack、es6</strong></li>
@@ -354,7 +376,7 @@
                     </ul>
                 </div>
                 <div class="item" class="page-break">
-                    <h3 class="break">创意画板</h3>
+                    <h3>创意画板</h3>
                     <ul>
                         <li>项目介绍：
                             是一个使用<span class="red">原生JS</span>开发的，主要利用<span class="red">HTML5的Canvas
