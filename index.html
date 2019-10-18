@@ -151,7 +151,7 @@
             min-height: calc(100vh - 162px);
         }
 
-        @media (max-width: 768px) {
+        /* @media (max-width: 768px) {
             header {
                 padding-top: 20px;
                 padding-bottom: 90px;
@@ -166,7 +166,7 @@
                 width: 100px;
                 height: 100px;
             }
-        }
+        } */
 
         @media print {
             div.break {
@@ -306,8 +306,8 @@
                 <p>熟悉Vue常用功能，理解如<span class="red">生命周期、组件、虚拟 DOM、数据响应式</span>等概念，能够使用Vue全家桶开发项目</p>
                 <p>熟悉<span class="red">模块化、工程化</span>开发流程，能够配置<span class="red">Webpack</span></p>
                 <p>有移动端开发经验，会使用<span class="red">rem、vw/vh、响应式</span>等技术制作适配手机设备的页面</p>
-                <p>了解<span class="red">HTTP</span>相关知识，了解常见的<span class="red">Web性能优化</span>方案</p>
-                <p>了解<span class="red">Node.js</span>，能够开发简单的后台服务器</p>
+                <p>了解<span class="red">HTTP、AJAX</span>相关知识，了解常见的<span class="red">Web性能优化</span>方案</p>
+                <p>熟悉<span class="red">微信小程序</span>，有使用小程序原生开发项目的经验</p>
                 <p>熟练使用<span class="red">VS Code、WebStorm、Git</span>等开发工具</p>
             </section>
 
@@ -319,14 +319,14 @@
                         <li>项目介绍：
                             该项目是一个基于<span class="red">Vue</span>实现的简单<span class="red">UI组件库</span>，设计思路主要来自
                             Framework7、Ant Design、Element UI、iView 等UI库，该框架目前已支持<span
-                                class="red">按钮、输入框、网格、布局、Toast</span>等组件（更新中）。每个组件的开发都是从<span
-                                class="red">需求分析</span>到<span class="red">单元测试</span>，再到<span
-                                class="red">TravisCI实现持续集成</span>，
+                                class="red">按钮、输入框、网格、布局、Toast</span>等组件（更新中）。每个组件的开发都模拟了从<span
+                                class="red">需求分析</span>然后<span class="red">代码设计</span>，再到<span
+                                class="red">单元测试</span>的完整流程，之后用<span class="red">TravisCI实现持续集成</span>，
                             最终以<span class="red">VuePress</span>为基础制作了官方文档，并将包发布于<span
                                 class="red">npmjs.org</span>。该项目使我更加了解了Vue的常用特征，同时也使自己对<span
                                 class="red">前端工程化流程</span>以及单元测试的重要性有了深刻理解。
                         </li>
-                        <li>技术栈：<strong>vue、vuepress、parcel、karma、mocha、scss、travisCI、es6</strong></li>
+                        <li>技术栈：<strong>Vue、VuePress、Karma、Mocha、SCSS、Travis CI、ES6</strong></li>
                         <li>项目源码:<a href="https://github.com/angmieee/augmi-ui"
                                 target="_blank">https://github.com/angmieee/augmi-ui</a>
                         </li>
@@ -336,31 +336,32 @@
                     </ul>
                 </div> -->
                 <div class="item">
-                    <h3>微信小程序：抖番茄电影</h3>
+                    <h3>微信小程序：抖番茄</h3>
                     <ul>
                         <li>项目介绍：
-                            该项目是使用<span class="red">微信小程序原生</span>语法开发的一款<span class="red">新闻、影评</span>应用，该应用实现了<span
-                                class="red">新闻、电影</span>两个<span
-                                class="red">模块</span>，完成了热点轮播、详情页、页面跳转、下拉刷新、实时搜索等功能，使用了第三方提供的后端接口实现<span
-                                class="red">数据动态更新</span>。
+                            该项目是使用<span class="red">微信小程序原生</span>语法开发的一款<span class="red">工具、效率</span>应用。该应用完成了<span
+                                class="red">待办、历史待办</span>两个<span class="red">功能模块</span>，待办模块实现了待办事项<span
+                                class="red">增、删、改、查</span>功能，历史待办模块展示待办历史，在开发过程中封装了button、clock、confirm等<span
+                                class="red">组件</span>，并使用第三方接口实现了<span class="red">数据持久化</span>，最后部署<span
+                                class="red">上线</span>。
 
                         </li>
-                        <li>项目源码:<a href="https://github.com/angmieee/shaking-tomato-mini-program"
-                                target="_blank">https://github.com/angmieee/shaking-tomato-mini-program</a></li>
-                        <li>项目预览: <a href="https://github.com/angmieee/shaking-tomato-mini-program"
-                                target="_blank">https://github.com/angmieee/shaking-tomato-mini-program</a></li>
+                        <li>项目源码:<a href="https://github.com/angmieee/tomato-mini-program"
+                                target="_blank">https://github.com/angmieee/tomato-mini-program</a></li>
+                        <li>项目预览: <a href="https://github.com/angmieee/tomato-mini-program"
+                                target="_blank">https://github.com/angmieee/tomato-mini-program</a></li>
                     </ul>
                 </div>
                 <div class="item">
                     <h3>Vue技术栈实现CNode社区</h3>
                     <ul>
                         <li>项目介绍：
-                            该项目使用Vue还原CNode官方社区，项目调用CNode官方社区提供的API，以<span class="red">Vue CLI</span>创建项目模版，使用<span
+                            该项目使用Vue还原了CNode官方社区。项目调用CNode官方社区提供的API，以<span class="red">Vue CLI</span>创建项目模版，使用<span
                                 class="red">Axios</span>获取数据，使用<span class="red">Vue
                                 Router</span>前端路由进行组件切换及数据传递，引入<span class="red">ElementUI</span>的<span
                                 class="red">Pagination</span>组件完成分页功能，Webpack打包<span class="red">部署上线</span>到GitHub。
                         </li>
-                        <li>技术栈：<strong>Vue、Vue CLI、Axios、ElementUI、Vue Router、Webpack、ES6</strong></li>
+                        <li>技术栈：<strong>Vue、Axios、ElementUI、Vue Router、Webpack、ES6</strong></li>
                         <li>项目源码:<a href="https://github.com/angmieee/vue-cnode"
                                 target="_blank">https://github.com/angmieee/vue-cnode</a>
                         </li>
@@ -373,8 +374,8 @@
                     <h3>创意画板</h3>
                     <ul>
                         <li>项目介绍：
-                            是一个使用<span class="red">原生JS</span>开发的，主要利用<span class="red">HTML5的Canvas
-                                API</span>，是我在学习原生JS及Canvas过程中开发的小工具。其提供在<span
+                            是一个使用<span class="red">原生JS</span>开发的画板应用，主要利用<span class="red">HTML5的Canvas
+                                API</span>实现，是我在学习原生JS及Canvas过程中开发的小工具。其提供在<span
                                 class="red">PC及手机端</span>使用，包括在线绘画、橡皮擦、画笔调色、画作删除等功能，并支持作品下载。
                         </li>
                         <li>项目源码:<a href="https://github.com/angmieee/canvas-demo"
